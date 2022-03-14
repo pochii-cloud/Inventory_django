@@ -1,0 +1,8 @@
+# Default ignored files
+/../../../../:PycharmProjects/django_inventory/.idea/shelf/
+/../../../../:PycharmProjects/django_inventory/.idea/workspace.xml
+# Datasource local storage ignored files
+/../../../../:PycharmProjects/django_inventory/.idea/dataSources/
+/../../../../:PycharmProjects/django_inventory/.idea/dataSources.local.xml
+# Editor-based HTTP Client requests
+/../../../../:PycharmProjects/django_inventory/.idea/httpRequests/

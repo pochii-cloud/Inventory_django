@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a141950-09e1-4722-ab24-8c275624b05a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="24ahsOx0cFmXl7QpAZORufz3CzG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/PycharmProjects/django_inventory/templates" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\django_inventory\templates" />
+      <recent name="D:\PycharmProjects\django_inventory\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmProjects\django_inventory\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="django_inventory" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django_inventory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a141950-09e1-4722-ab24-8c275624b05a" name="Default Changelist" comment="" />
+      <created>1643874814708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643874814708</updated>
+      <workItem from="1643874985916" duration="6027000" />
+      <workItem from="1643893990414" duration="17000" />
+      <workItem from="1643896648503" duration="19000" />
+      <workItem from="1643896734295" duration="10000" />
+      <workItem from="1644137681803" duration="125000" />
+      <workItem from="1645638714536" duration="3044000" />
+      <workItem from="1645689143209" duration="5007000" />
+      <workItem from="1645706366366" duration="743000" />
+      <workItem from="1645855270880" duration="1519000" />
+      <workItem from="1645882203594" duration="359000" />
+      <workItem from="1646062087578" duration="406000" />
+      <workItem from="1646186987641" duration="1638000" />
+      <workItem from="1646210213618" duration="616000" />
+      <workItem from="1646217609998" duration="33000" />
+      <workItem from="1646299599716" duration="596000" />
+      <workItem from="1646386862843" duration="854000" />
+      <workItem from="1646657520439" duration="3713000" />
+      <workItem from="1646662130310" duration="177000" />
+      <workItem from="1646715775581" duration="147000" />
+      <workItem from="1646724886036" duration="829000" />
+      <workItem from="1646804544572" duration="16904000" />
+      <workItem from="1646845333332" duration="1306000" />
+      <workItem from="1646891124866" duration="1306000" />
+      <workItem from="1646987453434" duration="248000" />
+      <workItem from="1646988391803" duration="411000" />
+      <workItem from="1646990403091" duration="203000" />
+      <workItem from="1646990662678" duration="1289000" />
+      <workItem from="1646992990707" duration="715000" />
+      <workItem from="1647026230712" duration="10897000" />
+      <workItem from="1647065194531" duration="6592000" />
+      <workItem from="1647239126601" duration="10277000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
