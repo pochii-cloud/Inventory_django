@@ -44,27 +44,29 @@
                                 <div class="card-body">
                                     <div class="small mb-1">
 
-                                        <form class="px-4 py-3" method="post">
+                                        <form class="px-4 py-3" method="post" action="{% url 'AddProductView' %}">
+
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <label for="category">category:</label>
-                                                <select class="form-control" id="category" name="category">
-                                                    {% for category in category %}
-                                                    <option>{{ category.name }}</option>
-                                                    {% endfor %}
+
+                                                <select class="form-control" id="category" {{ form.category }}
+
+                                                    <option name="category"></option>
+
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="name">name:</label>
-                                                <input class="form-control" id="category" name="name" type="text" required="required">
+                                                <input class="form-control" id="name" name="name" type="text" required="required"{{ form.name }}
                                             </div>
                                             <div class="form-group">
                                                 <label for="quantity">quantity:</label>
-                                                <input class="form-control" id="category" name="quantity" type="text" required="required">
+                                                <input class="form-control" id="quantity" name="quantity" type="text" required="required"{{ form.quantity }}
                                             </div>
                                             <div class="form-group">
                                                 <label for="price">price:</label>
-                                                <input class="form-control" id="category" name="price" type="number" required="required">
+                                                <input class="form-control" id="price" name="price" type="number" required="required"{{ form.price }}
                                             </div>
                                             <button class="btn btn-primary" type="submit">add product</button>
                                         </form>
@@ -93,9 +95,9 @@
                                         </button>
                                         <div class="dropdown-menu animated--fade-in"
                                             aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">All Products</a>
-                                            <a class="dropdown-item" href="#">All Categories</a>
-                                            <a class="dropdown-item" href="#">Back</a>
+                                            <a class="dropdown-item" href="{% url 'TablesView' %}">All Products</a>
+                                            <a class="dropdown-item" href="{% url 'AddCategoryView' %}">All Categories</a>
+                                            <a class="dropdown-item" href="{% url 'BaseView' %}">Back</a>
                                         </div>
                                     </div>
                                     <p class="mb-0 small">Note: This utility animates the CSS opacity property, meaning

@@ -35,7 +35,6 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Charts</h1>
-
                     <!-- Content Row -->
                     <div class="row">
 
@@ -44,7 +43,7 @@
                             <!-- Area Chart -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Bar Graph</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Bar Graph Representing Top products and their prices</h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-area">
@@ -54,20 +53,6 @@
                                 </div>
                             </div>
 
-                            <!-- Bar Chart -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">line Graph</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-bar">
-                                        <canvas id="line-chart"></canvas>
-                                    </div>
-
-                                </div>
-                                <hr>
-                            </div>
-
                         </div>
 
                         <!-- Donut Chart -->
@@ -75,7 +60,7 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart Showing Total Sales</h6>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
@@ -102,12 +87,12 @@
 new Chart(document.getElementById("myChart"), {
     type: 'bar',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      labels: [{% for item in qs %}'{{ item.name }}',{% endfor %}],
       datasets: [
         {
-          label: "Population (millions)",
+          label: "price(ksh)",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
+          data: [{% for item in qs %}{{ item.price }},{% endfor %}],
         }
       ]
     },
@@ -127,12 +112,12 @@ new Chart(document.getElementById("myChart"), {
 new Chart(document.getElementById("doughnut-chart"), {
 type: 'doughnut',
 data: {
-labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+labels: [{% for item in q %}'{{ item.product.name }}',{% endfor %}],
 datasets: [
 {
-label: "Population (millions)",
+label: "sales (ksh)",
 backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-data: [2478,5267,734,784,433]
+data: [{% for item in q %}{{ item.total_sales }},{% endfor %}]
 }
 ]
 },
@@ -146,49 +131,6 @@ text: 'Predicted world population (millions) in 2050'
 </script>
    <!--end of doughnut graph-->
 
-<!--start of line graph-->
-<script>
-new Chart(document.getElementById("line-chart"), {
-  type: 'line',
-  data: {
-    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-    datasets: [{
-        data: [86,114,106,106,107,111,133,221,783,2478],
-        label: "Africa",
-        borderColor: "#3e95cd",
-        fill: false
-      }, {
-        data: [282,350,411,502,635,809,947,1402,3700,5267],
-        label: "Asia",
-        borderColor: "#8e5ea2",
-        fill: false
-      }, {
-        data: [168,170,178,190,203,276,408,547,675,734],
-        label: "Europe",
-        borderColor: "#3cba9f",
-        fill: false
-      }, {
-        data: [40,20,10,16,24,38,74,167,508,784],
-        label: "Latin America",
-        borderColor: "#e8c3b9",
-        fill: false
-      }, {
-        data: [6,3,2,2,7,26,82,172,312,433],
-        label: "North America",
-        borderColor: "#c45850",
-        fill: false
-      }
-    ]
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'World population per region (in millions)'
-    }
-  }
-});
-                   </script>
-<!--end of line graph-->
    {% endblock %}
 
         </div>
